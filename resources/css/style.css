@@ -132,3 +132,13 @@ header h1 {
 
 
 /* Footer Section */
+footer .container {
+  background-color: azure;
+  display: flex;
+  align-items: center;
+}
+
+footer img {
+  padding: 4rem 1rem 4rem 4rem;
+  height: 1.5rem;
+}
