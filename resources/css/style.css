@@ -1,0 +1,49 @@
+html {
+  font-size: 18px;
+  line-height: 1.4rem;
+}
+
+
+/* Body Section */
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+div {
+  display: block;
+}
+
+.container {
+  margin: 0 auto;
+  width: 960px;
+}
+
+
+/* Header Section */
+header {
+  background-color: cadetblue;
+  width: 960px;
+  margin: 1rem auto;
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+header img {
+  height: 1.5rem;
+  padding: 0 1rem 0 2rem;
+}
+
+header .title {
+  color: white;
+  padding-right: 19rem;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+  padding: 1rem 2rem 1rem 0;
+}
