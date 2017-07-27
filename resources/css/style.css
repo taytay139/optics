@@ -55,6 +55,10 @@ header li {
   display: inline;
 }
 
+header .menu {
+  display: none;
+}
+
 header .flex {
   justify-content: flex-end;
   display: flex;
@@ -141,4 +145,69 @@ footer .container {
 footer img {
   padding: 4rem 1rem 4rem 4rem;
   height: 1.5rem;
+}
+
+
+
+/* Media Queries */
+
+/* Tablet - Portrait */
+@media only screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+
+  header .banner {
+    margin-top: 6rem;
+    margin-right: 2rem;
+  }
+
+  header h1 {
+    font-size: 1.33rem;
+    padding: 1.5rem 4rem;
+  }
+
+  footer .container {
+    margin-bottom: 5rem;
+  }
+}
+
+
+/* Phone Screen*/
+@media only screen and (max-width: 470px) {
+  .container {
+    width: 100%;
+  }
+
+  header {
+    padding-top: 0;
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  header .list {
+    display: none;
+  }
+
+  header .menu {
+    display: flex;
+    margin-right: 2rem;
+  }
+
+  header .banner {
+    margin-top: 9rem;
+    margin-right: 0;
+    width: 100%;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1rem;
+    padding: .75rem 0;
+  }
 }
