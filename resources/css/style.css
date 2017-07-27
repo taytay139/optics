@@ -15,7 +15,7 @@ div {
 
 .container {
   margin: auto;
-  width: 960px;
+  max-width: 960px;
 }
 
 
@@ -136,10 +136,11 @@ header h1 {
 
 
 /* Footer Section */
-footer .container {
+footer {
   background-color: azure;
   display: flex;
   align-items: center;
+  padding: 4rem 2rem;
 }
 
 footer img {
@@ -157,11 +158,13 @@ footer img {
     width: 100%;
   }
 
+  /* Nav Bar */
   header {
     padding-top: 0;
     height: 22rem;
   }
 
+  /* Banner */
   header .banner {
     margin-top: 6rem;
     margin-right: 2rem;
@@ -172,22 +175,28 @@ footer img {
     padding: 1.5rem 4rem;
   }
 
-  footer .container {
+  /* Footer */
+  footer {
     margin-bottom: 5rem;
   }
 }
 
 
 /* Phone Screen*/
-@media only screen and (max-width: 470px) {
+@media only screen and (max-width: 560px) {
   .container {
     width: 100%;
   }
 
+  /* Nav Bar */
   header {
     padding-top: 0;
     height: 17rem;
     background-position: 20%;
+  }
+
+  header #name {
+    display: none;
   }
 
   header .list {
@@ -199,6 +208,7 @@ footer img {
     margin-right: 2rem;
   }
 
+  /* Banner */
   header .banner {
     margin-top: 9rem;
     margin-right: 0;
@@ -209,5 +219,64 @@ footer img {
   header h1 {
     font-size: 1rem;
     padding: .75rem 0;
+  }
+
+  /* Services */
+  .services {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 3.77rem 0;
+  }
+
+  .service {
+    margin: 0;
+    padding-bottom: 0.77rem;
+    height: auto;
+  }
+
+  .service p {
+    font-size: 0.77rem;
+    margin: 0.77rem 0;
+  }
+
+  /* Info */
+  .info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .item {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
+
+  .title {
+    max-width: 100%;
+    padding: 0.5rem 0;
+    text-align: center;
+  }
+
+  .item p {
+    font-size: 0.77rem;
+    margin-left: 0.5rem;
+  }
+
+  /* Footer */
+  footer {
+    justify-content: center;
+    
+    /* WIDTH WAS TOO LARGE */
+    box-sizing: border-box;
+  }
+
+  footer img {
+    padding: 0;
+  }
+
+  footer #copyright {
+    display: none;
   }
 }
