@@ -14,7 +14,7 @@ div {
 }
 
 .container {
-  margin: 0 auto;
+  margin: auto;
   width: 960px;
 }
 
@@ -102,3 +102,33 @@ header h1 {
 .service p {
   line-height: 1.4rem;
 }
+
+
+/* Info Section */
+.info {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+  display: inline-block;
+}
+
+.title {
+  background-color: cadetblue;
+  color: white;
+  max-width: 10rem;
+  font-weight: bold;
+  padding: 0.5rem 1.25rem;
+}
+
+.item p {
+  padding-top: 1rem;
+  display: block;
+}
+
+
+/* Footer Section */
